@@ -9,7 +9,7 @@ window.onload = () => {
   document.body.style.overflowY = "hidden";
   document.body.style.overflowX = "hidden";
   content.classList.add("d-none");
-  navbar.classList.add("d-none");
+  // navbar.classList.add("d-none");
 };
 
 bukaUndangan.addEventListener("click", () => {
@@ -22,7 +22,7 @@ bukaUndangan.addEventListener("click", () => {
   }, 1000);
 
   content.classList.remove("d-none");
-  navbar.classList.remove("d-none");
+  // navbar.classList.remove("d-none");
 });
 
 const prokes = [
@@ -112,6 +112,88 @@ btnClose.addEventListener("click", () => {
   inputJmlRsvp.value = "";
 });
 
+let imgGaleri = [
+  "gallery-1",
+  "gallery-2",
+  "gallery-3",
+  "gallery-4",
+  "gallery-5",
+  "gallery-6",
+];
+
+let galeri = document.querySelector(".galeri");
+let galeriImg = [];
+
+imgGaleri.forEach((value, index) => {
+  galeriImg.push(`assets/img/galeri/${value}.jpg`);
+});
+
+galeriImg.forEach((value, index) => {
+  let owlItem = document.createElement("div");
+  owlItem.setAttribute("class", "item");
+
+  let imgItem = document.createElement("img");
+  imgItem.setAttribute("src", value);
+
+  owlItem.appendChild(imgItem);
+  galeri.appendChild(owlItem);
+});
+
+$("#galeri").add(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    margin: 10,
+    nav: false,
+    dotClass: false,
+    dots: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      800: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  });
+});
+
+// $("#galeri")
+//   .find("owl-carousel")
+//   .owlCarousel({
+//     loop: true,
+//     autoplay: true,
+//     autoplayTimeout: 3000,
+//     margin: 10,
+//     nav: false,
+//     dotClass: false,
+//     responsiveClass: true,
+//     responsive: {
+//       0: {
+//         items: 1,
+//       },
+//       600: {
+//         items: 1,
+//       },
+//       800: {
+//         items: 1,
+//       },
+//       1000: {
+//         items: 1,
+//       },
+//     },
+//   });
+
+console.log(galeri);
+
 const btnUcapan = document.querySelector("button[name='kirim']");
 const inputNamaUcapan = document.querySelector("input[name='nama']");
 const inputTextUcapan = document.querySelector("textarea[name='tulis-ucapan']");
@@ -120,4 +202,3 @@ btnUcapan.addEventListener("click", (e) => {
   inputNamaUcapan.value = "";
   inputTextUcapan.value = "";
 });
-console.log(btnTdkHadir);
