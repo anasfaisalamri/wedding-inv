@@ -1,325 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Corinthia&family=Petemoss&display=swap"
       rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
     />
 
+    <!-- bootstrap -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <!-- bootstarp icons -->
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+
+    <!-- my style -->
+    <link rel="stylesheet" href="assets/style/style.css" />
 
     <title>Wedding Invitation</title>
   </head>
-
   <body>
-    <!-- <div id="cover" class="cover">
-      <img
-        src="assets/flower.png"
-        alt="flower"
-        class="mx-auto d-block"
-        width="200"
-      />
-      <div class="text-center pb-5">
-        <h6 class="text-uppercase">undagan pernikahan</h6>
-        <h3>Dicky & Nita</h3>
+    <div id="cover" class="cover">
+      <div class="judul animate__animated animate__zoomIn">
+        <div class="text-center text-white text-capitalize">
+          <h5>pernikahan</h5>
+          <h1 class="font-petemoss display-3">dicky & nita</h1>
+          <button
+            type="button"
+            id="bukaUndangan"
+            class="btn btn-light rounded-5 px-4 mt-3 fw-semibold"
+          >
+            Buka Undangan
+          </button>
+        </div>
       </div>
-      <div class="text-center text-capitalize py-5">
-        <h4>hari | 00 | Bulan | 2022</h4>
-      </div>
-      <div class="text-center pb-3 mt-5 kepada">
-        <p class="fw-normal fs-6">Kepada</p>
-        <h6>Rekan-rekan</h6>
-        <button type="button" id="bukaUndangan" class="btn btn-primary mt-3">
-          <i class="bi bi-envelope-open me-1"></i>
-          Buka Undangan
-        </button>
-      </div>
-      <img
-        src="assets/flower.png"
-        alt="flower"
-        class="mx-auto d-block"
-        width="200"
-      />
-    </div> -->
+      <img src="assets/img/bg/cover.jpg" class="bg-cover" alt="" />
+      <div class="bg-transparan"></div>
+    </div>
 
-    <!-- <div class="navigationBar">
-      <nav
-        class="navbar navbar-expand-lg bg-primary navbar-dark fixed-bottom mx-auto"
-      >
+    <div class="navigationBar">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom mx-auto">
         <div class="container">
-          <div class="navbar-expand mx-auto">
-            <div class="navbar-nav fs-5">
-              <a class="nav-link" aria-current="page" href="#pernikahan">
+          <ul class="nav nav-pills fs-6 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#pernikahan">
                 <i class="bi bi-file-earmark-text"></i>
               </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#mempelai">
                 <i class="bi bi-heart"></i>
               </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#reservasi">
                 <i class="bi bi-gift"></i>
               </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#galeri">
                 <i class="bi bi-images"></i>
               </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#ucapan">
                 <i class="bi bi-chat-square-dots"></i>
               </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="content" data-bs-spy="scroll" data-bs-smooth-scroll="true">
+      <div class="container-content mx-auto">
+        <section id="pernikahan" class="pernikahan">
+          <div class="judul-pernikahan animate__animated animate__fadeInUp">
+            <div class="container text-center text-capitalize text-white">
+              <h6 class="text-uppercase">pernikahan</h6>
+              <h1 class="font-bilbo display-3 pb-3">dicky & nita</h1>
+              <h6>01.01.2022 | bandung</h6>
+            </div>
+          </div>
+          <div class="transparan2"></div>
+          <img
+            src="assets/img/bg/bgputih.png"
+            width="390"
+            class="lengkung-bawah"
+          />
+        </section>
+
+        <div class="container">
+          <div
+            class="text-center mb-3"
+            data-aos="fade-up"
+            data-aos-offset="400"
+          >
+            <img src="assets/img/bg/flower.png" height="170" alt="flower" />
+            <div class="row justify-content-center">
+              <div class="col-10 text-brown">
+                <p>
+                  “Dalam sebuah pernikahan kalian dipersatukan demi sebuah
+                  kebahagiaan dengan janji hati untuk saling membahagiakan.
+                  Bersamaku engkau akan hidup selamanya karena Tuhan pasti akan
+                  memberikan karunianya sebagai pelindung dan saksi dalam
+                  pernikahan ini. Untuk itulah kalian dipersatukan dalam satu
+                  keluarga”.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </nav>
-    </div> -->
-
-    <div id="content">
-      <div class="container my-3 mx-auto">
-        <section id="pernikahan" class="pernikahan">
-          <div class="container">
-            <div class="row text-center justify-content-between">
-              <div class="col">
-                <img src="assets/flower.png" width="250" alt="flower" />
-              </div>
-              <div class="col">
-                <img src="assets/flower.png" width="250" alt="flower" />
-              </div>
-            </div>
-
-            <div class="text-center mt-5">
-              <h6 class="text-uppercase">undangan pernikahan</h6>
-              <h3>Dicky & Nita</h3>
-            </div>
-
-            <div class="text-center my-5">
-              <h5>Hari</h5>
-              <h4>Dicky & Nita</h4>
-            </div>
-
-            <div class="text-center kepada mb-5">
-              <p>Kepada</p>
-              <h6>Rekan-rekan</h6>
-            </div>
-          </div>
-        </section>
 
         <section id="mempelai" class="mempelai">
-          <div class="container my-4 text-center">
-            <div class="text-center mb-3">
-              <img
-                src="assets/flower.png"
-                width="400"
-                height="100"
-                alt="flower"
-              />
-            </div>
-
-            <p>Kami mohon do'a & restunya atas penikahan kami</p>
-
+          <img src="assets/img/bg/rectangle1.png" class="bg-mempelai" />
+          <div
+            class="container-fluid px-0 text-center text-capitalize text-white content-mempelai"
+          >
             <div class="row justify-content-center">
-              <div class="col-8 my-5">
-                <img src="assets/dicky.jpg" class="img-fluid" alt="dicky" />
-              </div>
-              <div class="col-10 text-capitalize">
-                <h5>dicky</h5>
-                <p>putra bpk fulan & ibu fulana</p>
-              </div>
-            </div>
-
-            <h1 class="display-4 fw-bold">&</h1>
-
-            <div class="row justify-content-center">
-              <div class="col-8 my-5">
-                <img src="assets/nita.jpg" class="img-fluid" alt="dicky" />
-              </div>
-              <div class="col-10 text-capitalize">
-                <h5>nita</h5>
-                <p>putra bpk fulan & ibu fulana</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="acara" class="acara">
-          <div class="container">
-            <div class="text-center mb-3">
-              <img
-                src="assets/flower.png"
-                width="400"
-                height="100"
-                alt="flower"
-              />
-            </div>
-
-            <div class="text-center">
-              <h3>Acara</h3>
-              <p>
-                Kami bermaksud untuk mengundang saudara/(i) dalam acara
-                pernikahan kami pada:
-              </p>
-            </div>
-
-            <div class="text-center text-capitalize akad my-5">
-              <h5>akad nikah</h5>
-              <h6>hari, 01 bulan 2022</h6>
-              <p>09:00 - 10:00</p>
-              <p class="text-uppercase">tempat</p>
-              <p>alamat tempat akad</p>
-              <button type="button" class="btn btn-primary text-capitalize">
-                <i class="bi bi-geo-alt"></i>
-                navigasi map
-              </button>
-            </div>
-
-            <div class="text-center text-capitalize akad my-5">
-              <h5>akad nikah</h5>
-              <h6>hari, 01 bulan 2022</h6>
-              <p>10:00 - 16:00</p>
-              <p class="text-uppercase">tempat</p>
-              <p>alamat tempat akad</p>
-              <button type="button" class="btn btn-primary text-capitalize">
-                <i class="bi bi-geo-alt"></i>
-                navigasi map
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section id="reservasi" class="reservasi">
-          <div class="container text-center">
-            <div class="text-center mb-3">
-              <img
-                src="assets/flower.png"
-                width="400"
-                height="100"
-                alt="flower"
-              />
-            </div>
-
-            <div class="rsvp mt-5">
-              <h3 class="text-uppercase mb-4">rsvp</h3>
-              <button
-                type="button"
-                class="btn btn-primary text-capitalize col-6 py-2"
-              >
-                <div class="col">
-                  <i class="bi bi-person-check-fill display-5"></i>
-                </div>
-                <div class="col">
-                  <span>
-                    konfirmasi kehadiran
-                  </span>
-                </div>
-              </button>
-            </div>
-
-            <div class="kado mt-5 pt-3 pb-5 mb-5">
-              <h3 class="text-capitalize mb-4">kado</h3>
-              <button
-                type="button"
-                class="btn btn-primary text-capitalize col-6 py-2"
-              >
-                <div class="col">
-                  <i class="bi bi-gift-fill display-6"></i>
-                </div>
-                <div class="col">
-                  <span>
-                    kirim kado
-                  </span>
-                </div>
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section id="galeri" class="galeri">
-          <div class="container text-center">
-            <div class="text-center mb-4">
-              <img
-                src="assets/flower.png"
-                width="400"
-                height="100"
-                alt="flower"
-              />
-            </div>
-
-            <h3>Galeri</h3>
-          </div>
-        </section>
-
-        <section id="ucapan" class="ucapan">
-          <div class="container text-center mb-5 pb-5">
-            <div class="text-center mb-4">
-              <img
-                src="assets/flower.png"
-                width="400"
-                height="100"
-                alt="flower"
-              />
-            </div>
-
-            <h3>Ucapan & Doa</h3>
-
-            <div class="mb-2">
-              <input type="text" class="form-control" placeholder="Nama" />
-            </div>
-            <div class="mb-2">
-              <textarea
-                class="form-control"
-                rows="5"
-                placeholder="Tulis Ucapan & Do'a"
-              ></textarea>
-            </div>
-
-            <div class="d-grid">
-              <button type="button" class="btn btn-primary">
-                Kirim Ucapan
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section id="protokol" class="protokol">
-          <div class="container">
-            <div class="text-center mb-4">
-              <img
-                src="assets/flower.png"
-                width="400"
-                height="100"
-                alt="flower"
-              />
-            </div>
-
-            <div class="text-center text-capitalize">
-              <div class="row justify-content-center">
-                <div class="col-10">
-                  <h3>protokol kesehatan</h3>
+              <h1 class="font-bilbo" data-aos="fade-down" data-aos-offset="200">
+                Sang Mempelai
+              </h1>
+              <div class="col-10 mt-4">
+                <div
+                  class="mempelai-dicky mx-auto mb-2"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                ></div>
+                <div data-aos="fade-up" data-aos-offset="300">
+                  <h1 class="font-corinthia display-4 pt-2">dicky</h1>
                   <p>
-                    Acara ini diselenggarakan dengan mematuhi protokol
-                    kesehatan. Semua tamu undangan diwajibkan mematuhi Protokol
-                    Kesehatan ini.
+                    <span class="fs-5 fw-semibold">dicky irawan</span> <br />
+                    putra ke 3 dari bapak suhara dan ibu acih <br />
+                    <i class="bi bi-instagram fs-4"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-10 mt-4">
+                <div
+                  class="mempelai-nita mx-auto mb-2"
+                  data-aos="fade-left"
+                  data-aos-offset="200"
+                ></div>
+                <div data-aos="fade-up" data-aos-offset="300">
+                  <h1 class="font-corinthia display-4 pt-2">nita</h1>
+                  <p>
+                    <span class="fs-5 fw-semibold">nita yuliani</span> <br />
+                    putri ke 3 dari bapak aep saepudin dan ibu heni rohaeni
+                    <br />
+                    <i class="bi bi-instagram fs-4"></i>
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        <section id="acara" class="acara">
+          <div class="container-fluid">
+            <div class="row justify-content-center text-center text-white">
+              <div
+                class="col-10 p-4 content-acara"
+                data-aos="fade-down"
+                data-aos-offset="300"
+              >
+                <div
+                  data-aos="fade-up"
+                  data-aos-offset="300"
+                  data-aos-delay="500"
+                >
+                  <h1 class="mb-3 font-corinthia display-4">
+                    Assalamu'alaikum
+                  </h1>
+                  <p>
+                    “Ya Allah, dengan segala kesucian hati, kami bersujud
+                    memohon Ridho-Mu, untuk menuju Sunnah Rasul-Mu membentuk
+                    keluarga yang sakinah, mawaddah, warahmah.” <br />
+                    <br />
+                    Kami bermaksud mengundang Bapak/ibu/Saudara/i pada upacara
+                    pernikahan Putra dan Putri kami, yang akan di selenggarakan
+                    pada :
+                  </p>
+
+                  <div class="strip"></div>
+
+                  <div class="akad-nikah text-capitalize mt-3">
+                    <img
+                      src="assets/img/icons/ring.png"
+                      width="55"
+                      alt="ring"
+                      class="mb-3"
+                    />
+                    <h5>akad nikah</h5>
+                    <p>minggu, 15 mei 2022</p>
+                    <p>08.00 - 10.00 WIB</p>
+                  </div>
+
+                  <div class="strip"></div>
+
+                  <div class="resepsi text-capitalize my-3">
+                    <img
+                      src="assets/img/icons/resepsi.png"
+                      width="55"
+                      alt="ring"
+                      class="mb-3"
+                    />
+                    <h5>resepsi</h5>
+                    <p>minggu, 15 mei 2022</p>
+                    <p>08.00 - selesai</p>
+                  </div>
+
+                  <hr />
+
+                  <div class="lokasi text-capitalize">
+                    <img
+                      src="assets/img/icons/location.png"
+                      width="55"
+                      alt="ring"
+                      class="my-3"
+                    />
+                    <h5>lokasi</h5>
+                    <p>
+                      jl. sukaati permai 1, kelurahan pasirluyu kecamatan regol
+                      kota bandung.
+                    </p>
+                    <a
+                      href="https://goo.gl/maps/ugTh5SEw5jbCLAmK7"
+                      target="_blank"
+                      type="button"
+                      id="maps"
+                      class="btn btn-brown rounded-5 px-5 mt-3"
+                      >lihat maps</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="reservasi" class="reservasi">
+          <div class="container text-center pt-5">
+            <div class="row justify-content-center text-brown">
+              <div class="col-10">
+                <h1
+                  class="font-corinthia display-4"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                >
+                  Menuju Hari Bahagia
+                </h1>
+                <hr class="col-6 mx-auto" />
+                <div data-aos="fade-left" data-aos-offset="400">
+                  <p>
+                    Siang dan malam berganti begitu cepat, diantara saat-saat
+                    mendebarkan yang belum pernah kami rasakan sebelumnya. Kami
+                    nantikan kehadiran para keluarga dan sahabat, untuk menjadi
+                    saksi ikrar janji suci kami di hari yang bahagia.
+                  </p>
+                  <button
+                    class="btn btn-brown rounded-5 px-4 text-capitalize shadow-lg"
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                  >
+                    reservasi
+                  </button>
+
+                  <!-- modals -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog text-start text-capitalize">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">
+                            RSVP
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <div class="modal-body">
+                          <span class="kirim d-none">informasi terkirim!</span>
+                          <form action="" method="get">
+                            <label for="nama">nama</label> <br />
+                            <input
+                              type="text"
+                              name="nama-pengunjung"
+                              id="nama"
+                              placeholder="Nama Anda"
+                              autocomplete="off"
+                            />
+                            <br />
+                            <label for="rsvp">jumlah orang</label><br />
+                            <input
+                              type="number"
+                              name="rsvp"
+                              id="rsvp"
+                              placeholder="1"
+                            />
+                            <div class="modal-footer border-0">
+                              <button
+                                type="submit"
+                                class="btn btn-brown"
+                                name="konfirmasi"
+                              >
+                                konfirmasi hadir
+                              </button>
+                              <button
+                                type="submit"
+                                class="btn btn-danger"
+                                name="tidak-hadir"
+                              >
+                                tidak hadir
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr class="col-12 my-5 mx-auto" />
+              </div>
+            </div>
+            <h1
+              class="font-corinthia display-4 text-center text-brown"
+              data-aos="fade-right"
+              data-aos-offset="200"
+            >
+              Protokol Kesehatan
+            </h1>
+            <div class="row justify-content-center text-brown">
+              <div class="col-10 prokes"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="galeri" class="galeri">
+          <img src="assets/img/bg/rectangle1.png" class="bg-galeri" />
+          <div class="container-fluid px-0 text-center content-galeri">
+            <div class="row justify-content-center">
+              <div class="col-10 text-white">
+                <h1
+                  class="text-capitalize font-corinthia display-4"
+                  data-aos="fade-down"
+                  data-aos-offset="300"
+                >
+                  our galery
+                </h1>
+                <hr class="col-4 mx-auto" />
+                <p data-aos="fade-up" data-aos-offset="300">
+                  “Dan segala sesuatu Kami telah ciptakan berpasang-pasangan
+                  semuanya, baik dari apa yang ditumbuhkan oleh bumi dan dari
+                  diri mereka maupun dari apa yang tidak mereka ketahui”. <br />
+                  (Yasiin : 36)
+                </p>
+                <div class="col-12"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="ucapan" class="ucapan">
+          <div class="container text-center text-brown pt-5">
+            <div class="row justify-content-center">
+              <div class="col-10" data-aos="fade-down" data-aos-offset="300">
+                <h3 class="text-capitalize font-corinthia display-4">
+                  ucapan terbaikmu
+                </h3>
+                <p>
+                  Berikan ucapan dan harapan yang hangat kepada kedua mempelai.
+                </p>
+              </div>
+            </div>
+
+            <form action="" method="get">
+              <div class="mb-2" data-aos="fade-right" data-aos-offset="200">
+                <input
+                  type="text"
+                  name="nama"
+                  class="form-control"
+                  placeholder="Nama Anda"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-2" data-aos="fade-left" data-aos-offset="200">
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  placeholder="Tulis Ucapan & Do'a"
+                  name="tulis-ucapan"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                name="kirim"
+                class="btn btn-brown rounded-5 px-4"
+                data-aos="fade-up"
+                data-aos-offset="200"
+              >
+                Kirim Ucapan
+              </button>
+            </form>
+            <hr class="col-10 mx-auto" />
+          </div>
+        </section>
+
+        <footer>
+          <div class="container mb-5 pb-5">
+            <div class="row justify-content-center">
+              <div class="col-9 text-center text-brown text-capitalize">
+                <h3 class="font-corinthia display-5">
+                  sampai jumpa di hari bahagia kami.
+                </h3>
+                <img
+                  src="assets/img/bg/bgputih2.png"
+                  width="390"
+                  class="lengkung-atas"
+                />
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
 
-    <script src="script.js"></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="assets/script.js"></script>
   </body>
 </html>

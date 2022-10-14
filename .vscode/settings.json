@@ -16,7 +16,15 @@
     "titleBar.activeBackground": "#f9e64f",
     "titleBar.activeForeground": "#15202b",
     "titleBar.inactiveBackground": "#f9e64f99",
-    "titleBar.inactiveForeground": "#15202b99"
+    "titleBar.inactiveForeground": "#15202b99",
+    "commandCenter.border": "#15202b99"
   },
-  "peacock.color": "#f9e64f"
+  "peacock.color": "#f9e64f",
+  "liveServer.settings.port": 5502
+  // "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  // "editor.formatOnPaste": false, // required
+  // "editor.formatOnType": false, // required
+  // "editor.formatOnSave": true, // optional
+  // "editor.formatOnSaveMode": "file", // required to format on save
+  // "files.autoSave": "onFocusChange" // optional but recommended
 }
