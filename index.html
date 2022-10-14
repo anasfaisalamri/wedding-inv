@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- goole font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,25 +11,28 @@
       rel="stylesheet"
     />
 
-    <!-- bootstrap -->
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.css"
     />
-
-    <!-- bootstarp icons -->
     <link
       rel="stylesheet"
       href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
 
-    <!-- AOS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css"
+    />
+
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
 
-    <!-- Animate.css -->
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
 
-    <!-- my style -->
     <link rel="stylesheet" href="assets/style/style.css" />
 
     <title>Wedding Invitation</title>
@@ -54,36 +56,26 @@
       <div class="bg-transparan"></div>
     </div>
 
-    <div class="navigationBar">
+    <div id="navbar">
       <nav class="navbar navbar-expand-lg navbar-dark fixed-bottom mx-auto">
         <div class="container">
-          <ul class="nav nav-pills fs-6 mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#pernikahan">
-                <i class="bi bi-file-earmark-text"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#mempelai">
-                <i class="bi bi-heart"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reservasi">
-                <i class="bi bi-gift"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#galeri">
-                <i class="bi bi-images"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ucapan">
-                <i class="bi bi-chat-square-dots"></i>
-              </a>
-            </li>
-          </ul>
+          <div class="nav nav-pills fs-6 mx-auto">
+            <a href="#pernikahan" class="nav-link">
+              <i class="bi bi-file-earmark-text"></i>
+            </a>
+            <a href="#mempelai" class="nav-link">
+              <i class="bi bi-heart"></i>
+            </a>
+            <a href="#reservasi" class="nav-link">
+              <i class="bi bi-gift"></i>
+            </a>
+            <a href="#galeri" class="nav-link">
+              <i class="bi bi-images"></i>
+            </a>
+            <a href="#ucapan" class="nav-link">
+              <i class="bi bi-chat-square-dots"></i>
+            </a>
+          </div>
         </div>
       </nav>
     </div>
@@ -198,9 +190,7 @@
                     pernikahan Putra dan Putri kami, yang akan di selenggarakan
                     pada :
                   </p>
-
                   <div class="strip"></div>
-
                   <div class="akad-nikah text-capitalize mt-3">
                     <img
                       src="assets/img/icons/ring.png"
@@ -212,9 +202,7 @@
                     <p>minggu, 15 mei 2022</p>
                     <p>08.00 - 10.00 WIB</p>
                   </div>
-
                   <div class="strip"></div>
-
                   <div class="resepsi text-capitalize my-3">
                     <img
                       src="assets/img/icons/resepsi.png"
@@ -226,9 +214,7 @@
                     <p>minggu, 15 mei 2022</p>
                     <p>08.00 - selesai</p>
                   </div>
-
                   <hr />
-
                   <div class="lokasi text-capitalize">
                     <img
                       src="assets/img/icons/location.png"
@@ -364,7 +350,7 @@
           </div>
         </section>
 
-        <section id="galeri" class="galeri">
+        <section id="galeri">
           <img src="assets/img/bg/rectangle1.png" class="bg-galeri" />
           <div class="container-fluid px-0 text-center content-galeri">
             <div class="row justify-content-center">
@@ -383,7 +369,9 @@
                   diri mereka maupun dari apa yang tidak mereka ketahui”. <br />
                   (Yasiin : 36)
                 </p>
-                <div class="col-12"></div>
+              </div>
+              <div class="col-10">
+                <div class="owl-carousel owl-theme galeri"></div>
               </div>
             </div>
           </div>
@@ -453,6 +441,8 @@
       </div>
     </div>
 
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
     <script>
