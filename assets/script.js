@@ -23,7 +23,14 @@ bukaUndangan.addEventListener("click", () => {
 
   content.classList.remove("d-none");
   // navbar.classList.remove("d-none");
+
+  document.getElementById("song").play();
 });
+
+// let pause = document.querySelector(".pause");
+// pause.addEventListener("click", () => {
+//   document.getElementById("song").pause();
+// });
 
 const prokes = [
   {
