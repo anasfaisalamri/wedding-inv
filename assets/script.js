@@ -4,12 +4,9 @@ const content = document.getElementById("content");
 const navbar = document.querySelector(".navigationBar");
 
 window.onload = () => {
-  // document.documentElement.scrollTop = 0;
-  // document.body.scrollTop = 0;
   document.body.style.overflowY = "hidden";
   document.body.style.overflowX = "hidden";
   content.classList.add("d-none");
-  // navbar.classList.add("d-none");
 };
 
 bukaUndangan.addEventListener("click", () => {
@@ -22,15 +19,9 @@ bukaUndangan.addEventListener("click", () => {
   }, 1000);
 
   content.classList.remove("d-none");
-  // navbar.classList.remove("d-none");
 
   document.getElementById("song").play();
 });
-
-// let pause = document.querySelector(".pause");
-// pause.addEventListener("click", () => {
-//   document.getElementById("song").pause();
-// });
 
 const prokes = [
   {
@@ -172,34 +163,6 @@ $("#galeri").add(function () {
     },
   });
 });
-
-// $("#galeri")
-//   .find("owl-carousel")
-//   .owlCarousel({
-//     loop: true,
-//     autoplay: true,
-//     autoplayTimeout: 3000,
-//     margin: 10,
-//     nav: false,
-//     dotClass: false,
-//     responsiveClass: true,
-//     responsive: {
-//       0: {
-//         items: 1,
-//       },
-//       600: {
-//         items: 1,
-//       },
-//       800: {
-//         items: 1,
-//       },
-//       1000: {
-//         items: 1,
-//       },
-//     },
-//   });
-
-console.log(galeri);
 
 const btnUcapan = document.querySelector("button[name='kirim']");
 const inputNamaUcapan = document.querySelector("input[name='nama']");
