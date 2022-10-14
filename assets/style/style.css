@@ -112,12 +112,12 @@ h1 {
   z-index: -9999;
 }
 
-.navigationBar {
+#navbar {
   position: relative;
   z-index: 9;
 }
 
-.navbar {
+#navbar .navbar {
   max-width: 400px;
   border-radius: 10px 10px 0 0;
   max-height: 56px;
@@ -125,12 +125,12 @@ h1 {
   background-color: var(--brown);
 }
 
-.navbar .nav-link {
+#navbar .nav-link {
   margin: 0 10px;
   color: white;
 }
 
-.nav-pills .nav-link.active {
+#navbar .nav-link.active {
   background-color: var(--dark-brown);
 }
 
@@ -314,13 +314,13 @@ h1 {
   width: 55px;
 }
 
-.galeri {
+#galeri {
   position: relative;
   overflow: hidden;
   z-index: 2;
 }
 
-.galeri .bg-galeri {
+#galeri .bg-galeri {
   position: relative;
   height: 1000px;
   width: 619px;
@@ -330,18 +330,22 @@ h1 {
   transform: translate(-50%, 0);
 }
 
-.galeri .content-galeri {
+#galeri .content-galeri {
   position: absolute;
   top: 0;
   margin-top: 50px;
 }
 
-.galeri hr {
+#galeri hr {
   height: 2px;
   background-color: white;
   color: white;
   opacity: 1;
   border-radius: 2px;
+}
+
+#galeri .owl-item img {
+  border-radius: 220px;
 }
 
 .ucapan hr {
