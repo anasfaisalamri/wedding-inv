@@ -2,18 +2,27 @@
   "name": "weddinginv",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anasfaisalamri/wedding-inv.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anasfaisalamri/wedding-inv/issues"
+  },
+  "homepage": "https://github.com/anasfaisalamri/wedding-inv#readme",
   "dependencies": {
     "animate.css": "^4.1.1",
-    "aos": "^3.0.0-beta.6",
-    "bootstrap": "^5.2.0",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
+    "jquery": "^3.6.1",
     "owl.carousel": "^2.3.4"
   }
 }
