@@ -82,7 +82,7 @@ btnKonfiRsvp.addEventListener("click", (e) => {
     inputNamaRsvp.value = "";
     inputJmlRsvp.value = "";
   }
-  return 0;
+  // return 0;
 });
 
 btnTdkHadir.addEventListener("click", (e) => {
@@ -94,7 +94,7 @@ btnTdkHadir.addEventListener("click", (e) => {
     inputNamaRsvp.value = "";
     inputJmlRsvp.value = "";
   }
-  return 0;
+  // return 0;
 });
 
 btnClose.addEventListener("click", () => {
