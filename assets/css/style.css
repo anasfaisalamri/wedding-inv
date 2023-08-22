@@ -89,7 +89,8 @@ body {
   padding-bottom: 10rem;
 }
 
-.home h2 {
+.home h2,
+.info h2 {
   color: var(--brown);
   font-family: "Sacramento", cursive;
   font-size: 5rem;
@@ -122,6 +123,68 @@ body {
   color: var(--brown);
 }
 
+.parallax-info {
+  position: relative;
+  text-align: center;
+  background-image: url(../img/parallax.jpg);
+  min-height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-info p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 1.8rem;
+}
+
+.info {
+  background-color: var(--brown);
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.info h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: white !important;
+  border: 1px solid #999;
+}
+
+.info .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
 /* media query */
 /* extra large */
 @media (max-width: 1200px) {
@@ -135,6 +198,17 @@ body {
 
   .simply-countdown > .simply-section {
     padding: 70px;
+  }
+
+  .parallax-info {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .parallax-info p {
+    width: 100%;
+    letter-spacing: 8px;
+    /* font-size: 1.5rem; */
   }
 }
 
@@ -164,5 +238,16 @@ body {
   .simply-countdown > .simply-section {
     padding: 45px;
     margin: 3px;
+  }
+
+  .parallax-info {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  .parallax-info p {
+    width: 100%;
+    letter-spacing: 7px;
+    /* font-size: 1.5rem; */
   }
 }
