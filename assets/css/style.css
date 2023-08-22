@@ -1,5 +1,6 @@
 :root {
   --brown: #c78665;
+  --bg: #0a0a0a;
 }
 
 body {
@@ -429,6 +430,28 @@ body {
 .rsvp .wish-list li p {
   font-size: 0.8rem;
   margin-bottom: 0;
+}
+
+footer {
+  padding: 3rem;
+  background-color: var(--brown);
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
 }
 
 /* media query */
