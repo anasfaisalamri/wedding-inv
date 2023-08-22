@@ -36,7 +36,12 @@
         <h1>Lorem & Ipsum</h1>
         <p>Akan melangsungkan resepsi pernikahan dalam :</p>
         <div class="simply-countdown"></div>
-        <a href="#undangan" class="btn btn-lg mt-4 undangan">Lihat Undangan</a>
+        <a
+          href="#undangan"
+          onClick="enableScroll()"
+          class="btn btn-lg mt-4 undangan"
+          >Lihat Undangan</a
+        >
       </main>
     </section>
 
@@ -47,5 +52,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
     <script src="assets/countdown/simplyCountdown.min.js"></script>
     <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

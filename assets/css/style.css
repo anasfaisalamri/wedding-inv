@@ -52,6 +52,10 @@ body {
   background-color: var(--brown);
 }
 
+.hero-out {
+  z-index: -999999;
+}
+
 /* media query */
 /* extra large */
 @media (max-width: 1200px) {
