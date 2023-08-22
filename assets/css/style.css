@@ -93,7 +93,8 @@ body {
 .info h2,
 .story h2,
 .gallery h2,
-.rsvp h2 {
+.rsvp h2,
+.gifts h2 {
   color: var(--brown);
   font-family: "Sacramento", cursive;
   font-size: 5rem;
@@ -213,13 +214,15 @@ body {
 
 .story,
 .gallery,
-.rsvp {
+.rsvp,
+.gifts {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
 
 .story span,
-.gallery span {
+.gallery span,
+.gifts span {
   text-transform: uppercase;
   color: #666;
   font-size: 0.9rem;
@@ -230,7 +233,8 @@ body {
 
 .story p,
 .gallery p,
-.rsvp p {
+.rsvp p,
+.gifts p {
   font-size: 1rem;
   font-weight: 300;
 }
