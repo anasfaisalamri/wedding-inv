@@ -470,6 +470,62 @@
       </div>
     </section>
 
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Rsvp</h2>
+            <p>
+              Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga
+              apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa
+              restu kepada kedua mempelai atas kehadiran serta doa restu, kami
+              ucapakan terima kasih.
+            </p>
+          </div>
+
+          <div class="col-lg-8 col-10 mt-5">
+            <div class="card">
+              <form action="" method="POST" class="mx-3">
+                <div class="card-body">
+                  <div class="mb-3 mt-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Nama"
+                      aria-label="Nama"
+                      name="nama"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <input
+                      class="form-control"
+                      type="number"
+                      placeholder="max. 5 Orang"
+                      id="orang"
+                      aria-label="max. 5 Orang"
+                      name="orang"
+                      min="1"
+                      max="5"
+                    />
+                  </div>
+                  <select class="form-select" name="status" id="status">
+                    <option selected>Pilih salah satu</option>
+                    <option value="Hadir">Hadir</option>
+                    <option value="Tidak Hadir">Tidak Hadir</option>
+                  </select>
+                </div>
+                <div class="d-grid col-4 mx-auto">
+                  <button type="submit" class="btn mb-4">Konfirmasi</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="assets/js/jquery-3.6.1.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

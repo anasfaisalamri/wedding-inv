@@ -92,7 +92,8 @@ body {
 .home h2,
 .info h2,
 .story h2,
-.gallery h2 {
+.gallery h2,
+.rsvp h2 {
   color: var(--brown);
   font-family: "Sacramento", cursive;
   font-size: 5rem;
@@ -211,7 +212,8 @@ body {
 }
 
 .story,
-.gallery {
+.gallery,
+.rsvp {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -227,7 +229,8 @@ body {
 }
 
 .story p,
-.gallery p {
+.gallery p,
+.rsvp p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -373,6 +376,55 @@ body {
   padding: 0 20px !important;
   margin: 0 10px 0 0;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.rsvp button {
+  background-color: var(--brown);
+  color: white;
+}
+
+.rsvp button:hover {
+  color: white;
+  background-color: #926148;
+}
+
+.rsvp label {
+  font-size: 1rem;
+}
+
+.rsvp .card {
+  background-color: #f5f5f5;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.rsvp .wish-list {
+  max-height: 300px;
+  overflow-y: scroll;
+  background-color: white;
+  margin: 5px;
+  padding: 0 0 0 24px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.rsvp .wish-list li {
+  padding: 16px 12px;
+  margin: 20px 0;
+  background-color: var(--brown);
+  max-width: 750px;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.rsvp .wish-list li h5 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.rsvp .wish-list li p {
+  font-size: 0.8rem;
+  margin-bottom: 0;
 }
 
 /* media query */
