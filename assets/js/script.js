@@ -1,3 +1,24 @@
+window.addEventListener("load", function () {
+  const form = document.getElementById("my-form");
+  const inputNama = document.querySelector('[name="nama"]');
+  const inputJumlah = document.querySelector('[name="jumlah"]');
+  const selectStatus = document.querySelector('[name="status"]');
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: "POST",
+      body: data,
+    }).then(() => {
+      alert("Konfirmasi kehadiran berhasil terkirim!");
+      inputNama.value = "";
+      inputJumlah.value = "";
+      selectStatus.value = "Pilih salah satu";
+    });
+  });
+});
+
 const rootElement = document.querySelector(":root");
 const cover = document.querySelector(".hero");
 const btnOpen = document.querySelector(".undangan");
@@ -16,7 +37,7 @@ function disableScroll() {
 function enableScroll() {
   window.onscroll = function () {};
   rootElement.style.scrollBehavior = "smooth";
-  // localStorage.setItem("opened", "true");
+  localStorage.setItem("opened", "true");
 }
 
 if (!localStorage.getItem("opened")) {
