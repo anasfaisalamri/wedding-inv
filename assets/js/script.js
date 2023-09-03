@@ -45,3 +45,12 @@ offcanvas.addEventListener("show.bs.offcanvas", function () {
 offcanvas.addEventListener("hidden.bs.offcanvas", function () {
   stickyTop.style.overflow = "hidden";
 });
+
+const urlParams = new URLSearchParams(window.location.search);
+const nama = urlParams.get("n") || "";
+const pronoun = urlParams.get("p") || "Bapak/Ibu/Saudara/i, ";
+const namaRsvp = document.querySelector(".rsvp #nama");
+
+const namaContainer = document.querySelector(".hero h4 span");
+namaContainer.innerText = `${pronoun} ${nama}`;
+namaRsvp.value = nama;
