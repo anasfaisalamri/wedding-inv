@@ -188,9 +188,21 @@
           <div class="col-md-8 col-10 text-center">
             <h2>Informasi Acara</h2>
             <p class="alamat">
-              Alamat: Gedung Lorem Ipsum <br />
-              Jl. Lorem Ipsum ABC No.123, Kec. Lorem, Kota Ipsum
+              Alamat: Puri Suryalaya Wedding House <br />
+              Jl. Soekarno Hatta No.487, Cijagra, Kec. Lengkong, Kota Bandung,
+              Jawa Barat 40265
             </p>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.508506711069!2d107.6249336!3d-6.949184199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e85e33e27241%3A0xdce793b8f2be67cc!2sPuri%20Suryalaya%20Wedding%20House!5e0!3m2!1sid!2sid!4v1693739065425!5m2!1sid!2sid"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+
             <a href="#" class="btn btn-light btn-sm my-3"
               >Klik untuk membuka peta</a
             >
@@ -482,13 +494,14 @@
 
           <div class="col-lg-8 col-10 mt-5">
             <div class="card">
-              <form
-                action="https://script.google.com/macros/s/AKfycbx3zguY9R7H39lQw70K8ulr4dLNux30sL7oSoO2WbV3gnf4SuyfNbxD9UdIn4eteWU2/exec"
-                method="POST"
-                class="mx-3"
-                id="my-form"
-              >
-                <div class="card-body">
+              <div class="card-body">
+                <div class="rsvp-alert mx-3 mt-3"></div>
+                <form
+                  action="https://script.google.com/macros/s/AKfycbx3zguY9R7H39lQw70K8ulr4dLNux30sL7oSoO2WbV3gnf4SuyfNbxD9UdIn4eteWU2/exec"
+                  method="POST"
+                  class="mx-3"
+                  id="my-form"
+                >
                   <div class="mb-3 mt-3">
                     <input
                       type="text"
@@ -497,6 +510,8 @@
                       placeholder="Nama"
                       aria-label="Nama"
                       name="nama"
+                      required
+                      autocomplete="off"
                     />
                   </div>
 
@@ -510,18 +525,19 @@
                       name="jumlah"
                       min="1"
                       max="5"
+                      required
                     />
                   </div>
-                  <select class="form-select" name="status" id="status">
+                  <select class="form-select mb-3" name="status" id="status">
                     <option selected>Pilih salah satu</option>
                     <option value="Hadir">Hadir</option>
                     <option value="Tidak Hadir">Tidak Hadir</option>
                   </select>
-                </div>
-                <div class="d-grid col-4 mx-auto">
-                  <button type="submit" class="btn mb-4">Konfirmasi</button>
-                </div>
-              </form>
+                  <div class="d-grid col-4 mx-auto">
+                    <button type="submit" class="btn mb-4">Konfirmasi</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -606,6 +622,7 @@
       AOS.init();
     </script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/rsvp.js"></script>
     <script src="assets/js/carousel.js"></script>
   </body>
 </html>
