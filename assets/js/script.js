@@ -1,6 +1,10 @@
 const rootElement = document.querySelector(":root");
 const cover = document.querySelector(".hero");
 const btnOpen = document.querySelector(".undangan");
+const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+const audioIcon = document.querySelector(".audio-icon-wrapper i");
+const song = document.querySelector("#song");
+let isPlaying = false;
 
 function disableScroll() {
   scrollTop = document.pageYOffset || document.documentElement.scrollTop;
@@ -17,7 +21,30 @@ function enableScroll() {
   window.onscroll = function () {};
   rootElement.style.scrollBehavior = "smooth";
   // localStorage.setItem("opened", "true");
+
+  playAudio();
 }
+
+function playAudio() {
+  song.volume = 0.3;
+  audioIconWrapper.style.display = "flex";
+  song.play();
+  isPlaying = true;
+}
+
+audioIconWrapper.addEventListener("click", () => {
+  if (isPlaying) {
+    song.pause();
+    audioIcon.classList.remove("fa-compact-disc");
+    audioIcon.classList.add("fa-circle-pause");
+  } else {
+    song.play();
+    audioIcon.classList.add("fa-compact-disc");
+    audioIcon.classList.remove("fa-circle-pause");
+  }
+
+  isPlaying = !isPlaying;
+});
 
 // if (!localStorage.getItem("opened")) {
 //   disableScroll();
