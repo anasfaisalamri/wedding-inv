@@ -436,6 +436,14 @@ body {
   margin-bottom: 0;
 }
 
+.rsvp .card-wish {
+  background-color: var(--brown);
+  margin: 1rem 1rem;
+  padding: 1rem;
+  color: white;
+  border-radius: 5px;
+}
+
 .gifts {
   background-color: #f5f5f5;
 }

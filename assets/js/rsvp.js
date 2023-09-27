@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
   const form = document.getElementById("my-form");
-  const inputNama = document.querySelector('[name="nama"]');
-  const inputJumlah = document.querySelector('[name="jumlah"]');
+  // const inputNama = document.querySelector('[name="nama"]');
+  // const inputJumlah = document.querySelector('[name="jumlah"]');
   const selectStatus = document.querySelector('[name="status"]');
   const rsvpAlert = document.querySelector(".rsvp-alert");
 
@@ -34,8 +34,8 @@ window.addEventListener("load", function () {
         rsvpAlert.removeChild(bsAlert);
       }, 2500);
 
-      inputNama.value = "";
-      inputJumlah.value = "";
+      // inputNama.value = "";
+      // // inputJumlah.value = "";
       selectStatus.value = "Pilih salah satu";
     });
   });
