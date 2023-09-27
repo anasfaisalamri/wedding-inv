@@ -542,57 +542,36 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center mt-5">
           <div class="col-md-8 col-10 mt-5 text-center">
-            <h2>Wish</h2>
-            <p>Kirim Doa & Ucapan Kepada kedua Mempelai</p>
-            <div class="card">
-              <div class="card-body">
-                <form
-                  action="https://script.google.com/macros/s/AKfycby9jyz5CoRrnL_UcD8YTcYG6jmeXOtwZG9HXktFp4nk-cF7aOOYXb7V3icOHO5NNwsf/exec"
-                  method="POST"
-                  class="mx-3"
-                  id="my-form-wish"
-                >
-                  <div class="mb-3 mt-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="nama"
-                      placeholder="Nama"
-                      aria-label="Nama"
-                      name="nama"
-                      required
-                      autocomplete="off"
-                    />
-                  </div>
-
-                  <div class="mb-3">
-                    <textarea
-                      name="wish"
-                      id="wish"
-                      placeholder="Tulis pesan anda..."
-                      class="form-control"
-                      style="height: 100px"
-                    ></textarea>
-                  </div>
-                  <div class="d-grid col-4 mx-auto">
-                    <button type="submit" class="btn mb-4">Konfirmasi</button>
-                  </div>
-                </form>
-              </div>
-            </div>
+            <div id="disqus_thread"></div>
+            <script>
+              /**
+               *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+               *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+              (function () {
+                // DON'T EDIT BELOW THIS LINE
+                var d = document,
+                  s = d.createElement("script");
+                s.src = "https://wedding-inv-by-anas.disqus.com/embed.js";
+                s.setAttribute("data-timestamp", +new Date());
+                (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>
+              Please enable JavaScript to view the
+              <a href="https://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+              >
+            </noscript>
           </div>
-
-          <div class="col-md-8 col-10 mt-5">
-            <div class="card output">
-              <div class="card-body">
-                <div class="output"></div>
-              </div>
-            </div>
-          </div>
-        </div> -->
+        </div>
       </div>
     </section>
 
